@@ -35,7 +35,7 @@ def sign_in():
         password = ""
         reenter = ""
 
-    if email != "" and "@" not in email or "." not in email:
+    if ("@" not in email or "." not in email) and email != "":
         email_error = "Please enter a valid e-mail."
 
     if not username_error and not password_error and not reenter_error and not email_error:
